@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Gagalin";
+    src: url("/assets/font/Gagalin-Regular.woff") format("woff");
+}
+:root{
+    --main-color: #1c8ed8;
+    --secondary-color: #ff682b;
+}
+h1{
+    font-family: 'Gagalin';
+}
