@@ -6,7 +6,7 @@
         <meta name="description" content="description">
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
-    <body>
+    <body></body>
         <h1>asdasdf</h1>
     </body>
 </html>

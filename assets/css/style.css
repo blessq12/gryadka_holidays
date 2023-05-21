@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Gagalin";
-    src: url("/assets/font/Gagalin-Regular.woff") format("woff");
+    src: url("assets/font/Gagalin-Regular.woff") format("woff");
 }
 :root{
     --main-color: #1c8ed8;
