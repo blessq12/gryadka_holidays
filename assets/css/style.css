@@ -6,6 +6,11 @@
     font-weight: normal;
     font-style: normal;
 }
+@keyframes scrollHorizontal {
+    100% {
+        transform: translateX(-100%);
+    }
+}
 :root{
     /* colors */
     --main-color: #1c8ed8;
@@ -17,21 +22,10 @@ a{
     color: var(--main-color);
     text-decoration: none;
 }
-.header-fixed{
-    position: fixed;
-    width: 100%;
-    padding: 15px 0;
-    transition: all 0.3s linear;
-}
-.scrolled{
-    background: var(--main-color);
-}
-.logo-top{
-    width: 75px;
-    height: auto;
-}
+
 section{
     padding: 50px 0;
+    position: relative;
 }
 .hero-wrapper{
     background: url('../../assets/images/hero-banner.jpg');
@@ -43,7 +37,9 @@ section{
     align-items: center;
 }
 .hero-wrapper h1{
+    font-family: var(--heading);
     text-align: center;
+    font-size: 120px;
 }
 .hero-wrapper h2{
     text-align: center;
@@ -65,7 +61,28 @@ section{
     margin: 0 auto;
     padding: 0;
 }
-
+.ticker-wrap{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+}
+.ticker{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    animation: scrollHorizontal 90s infinite linear;
+}
+.ticker li {
+    padding: 10px 30px;
+    font-size: 98px;
+    font-weight: 800;
+    white-space: nowrap;
+    text-transform: uppercase;
+    opacity: 0.1;
+}
 /* footer section styles */
 footer{
     background: var(--secondary-color);

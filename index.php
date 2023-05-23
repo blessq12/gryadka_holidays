@@ -12,17 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-    <header class="header-fixed">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-6 d-flex justify-content-center">
-                    <div class="logo-top">
-                        <object data="assets/images/svg/logo.svg" type=""></object>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    
     <!-- hero banner section -->
     <div class="hero-wrapper">
         <div class="container">
@@ -36,6 +26,17 @@
     </div>
     <!-- for whom section -->
     <section>
+        <div class="ticker-wrap">
+                <ul class="ticker">
+                    <li>Сильное окружение</li>
+                    <li>Своё мнение</li>
+                    <li>Будущие предприниматели</li>
+                    <li>Творчество</li>
+                    <li>Креативность</li>
+                    <li>Своё мышление</li>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-12">
