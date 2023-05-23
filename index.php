@@ -11,23 +11,42 @@
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
-    <body>        
+    <body>
+    <header class="header-fixed">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-6 d-flex justify-content-center">
+                    <div class="logo-top">
+                        <object data="assets/images/svg/logo.svg" type=""></object>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- hero banner section -->
     <div class="hero-wrapper">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
+            <div class="row d-flex justify-content-center">
+                <div class="col-8">
                     <h1>Каникулы в Грядка Сити</h1>
                     <h2>10 дневынй курс социального проектирования</h2>
                 </div>
             </div>
         </div>
     </div>
-
+    <!-- for whom section -->
     <section>
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2>Для кого подойдет этот курс</h2>
+                    <div class="title-section">
+                        <h2>Для кого подойдет этот курс</h2>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
                     <ul>
                         <li>Для ребят, которые генерируют и хотят представить свои идеи</li>
                         <li>Для ребят, которым нужно находится в сильном окружении</li>
@@ -38,12 +57,19 @@
             </div>
         </div>
     </section>
-
+    <!-- how it be -->
     <section>
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2>Как будет проходить</h2>
+                    <div class="title-section">
+                        <h2>Как будет проходить</h2>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
                     <ul>
                         <li>Группа edutaiment проходит отдельно от игровой программы МК, тренинги и задания наставника</li>
                         <li>На 5 день дети будут знакомиться с направлениями в котором могут создать проект: помощь животным, людям, планете или соц. бизнес</li>
@@ -54,11 +80,19 @@
             </div>
         </div>
     </section>
+    <!-- what it gave -->
     <section>
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2>Что получит ребенок</h2>
+                    <div class="title-section">
+                        <h2>Что получит ребенок</h2>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
                     <ul>
                         <li>Каждый ребенок получит набор навыков: креативное мышление, критическое мышление, работа в команде, публичные выступления</li>
                         <li>Готовый проект для выступления на конференции Грядка Сити в августе</li>
@@ -68,11 +102,15 @@
             </div>
         </div>
     </section>
+    <!-- price section -->
     <section>
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2>Стоимость</h2>
+                    <div class="title-section">
+                        <h2>Стоимость</h2>
+                        <hr>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -99,11 +137,15 @@
             </div>
         </div>
     </section>
+    <!-- contact section -->
     <section>
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2>Контакты</h2>
+                    <div class="title-section">
+                        <h2>Контакты</h2>
+                        <hr>
+                    </div>
                 </div>
             </div>
             <div class="row d-flex align-items-center">
@@ -123,6 +165,20 @@
             </div>
         </div>
     </section>
+    <!-- footer section -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <p class="text-center text-md-start m-0">Грядка Сити © <?= date('Y') ?> Все права защищены</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <p class="text-center text-md-end m-0">Разработано <a href="http://code-me.ru" class="text-uppercase text-white">code-me</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.js"></script>
     <script src="assets/js/app.js"></script>

@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded',function(){
-    // let loader = document.querySelector('.loader')
-    // setTimeout(function(){
-    //     loader.classList.add('loader-hide')
-    //     console.log('loader hide')
-    // },2000)
+    let header = document.getElementsByTagName('header')[0]
+    window.addEventListener('scroll',function(){
+        let scroll = this.scrollY
+        console.log(scroll)
+    })
 })

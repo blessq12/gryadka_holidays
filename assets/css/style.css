@@ -13,6 +13,23 @@
     /* fonts */
     --heading: 'Gagalin';
 }
+a{
+    color: var(--main-color);
+    text-decoration: none;
+}
+.header-fixed{
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    transition: all 0.3s linear;
+}
+.scrolled{
+    background: var(--main-color);
+}
+.logo-top{
+    width: 75px;
+    height: auto;
+}
 section{
     padding: 50px 0;
 }
@@ -21,7 +38,38 @@ section{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    min-height: 550px;
+    min-height: 750px;
     display: flex;
     align-items: center;
 }
+.hero-wrapper h1{
+    text-align: center;
+}
+.hero-wrapper h2{
+    text-align: center;
+}
+/* title section styles */
+.title-section{
+    padding: 30px 0;
+    text-align: center;
+}
+.title-section h2{
+    font-family: var(--heading);
+    font-size: 38px;
+}
+.title-section p{}
+.title-section hr{
+    width: 30%;
+    border-top: 3px solid var(--secondary-color);
+    opacity: 1;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* footer section styles */
+footer{
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 20px 0;
+}
+/* end footer section styles */
