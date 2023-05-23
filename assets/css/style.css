@@ -6,18 +6,6 @@
     font-weight: normal;
     font-style: normal;
 }
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: scale(0.5);
-        transform: rotate(-5deg);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1.5);
-        transform: rotate(0);
-    }
-}
 :root{
     /* colors */
     --main-color: #1c8ed8;
@@ -25,29 +13,15 @@
     /* fonts */
     --heading: 'Gagalin';
 }
-.loader{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(28deg, rgba(0,69,115,1) 0%, rgba(116,189,237,1) 48%, rgba(28,142,216,1) 100%);
-    width: 100%;
-    height: 100%;
+section{
+    padding: 50px 0;
+}
+.hero-wrapper{
+    background: url('../../assets/images/hero-banner.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 550px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    transition:all 0.2s linear;
-}
-.loader-hide{
-    top: -100%;
-}
-.loader-anim-logo{
-    height: 250px;
-    width: 250px;
-    animation: fadeIn 1.5s linear;
-}
-.loader-anim-logo h3{
-    color: #fff;
-    text-align: center;
-    font-size: 38px;
-    font-family: var(--heading);
 }
