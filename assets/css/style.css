@@ -23,11 +23,12 @@ a{
     text-decoration: none;
 }
 body{
-    overflow: hidden;
+    
 }
 section{
     padding: 50px 0;
     position: relative;
+    overflow: hidden;
 }
 .hero-wrapper{
     background: url('../../assets/images/hero-banner.jpg');
