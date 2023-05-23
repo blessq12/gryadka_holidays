@@ -17,7 +17,7 @@
     <div class="hero-wrapper">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="col-8">
+                <div class="col-12 col-md-8 col-lg-8">
                     <h1>Каникулы в Грядка Сити</h1>
                     <h2>10 дневынй курс социального проектирования</h2>
                 </div>
