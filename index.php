@@ -15,11 +15,21 @@
     
     <!-- hero banner section -->
     <div class="hero-wrapper">
+        <div class="overlay"></div>
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-12 col-md-8 col-lg-8">
                     <h1>Каникулы в Грядка Сити</h1>
-                    <h2>10 дневынй курс социального проектирования</h2>
+                    <h2>Запишитесь в городской лагерь детского города профессий</h2>
+                    <h4>Группы каждую неделю:</h4>
+                    <div class="months">
+                        <div class="item">Июнь</div>
+                        <div class="item">Июль</div>
+                        <div class="item">Август</div>
+                    </div>
+                    <div class="scroll-down">
+                        <object data="assets/images/svg/arrow-down.svg" type=""></object>
+                    </div>
                 </div>
             </div>
         </div>
@@ -41,20 +51,52 @@
             <div class="row">
                 <div class="col-12">
                     <div class="title-section">
-                        <h2>Для кого подойдет этот курс</h2>
+                        <h2>Почему выбирают «Грядка Сити»?</h2>
                         <hr>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
-                    <ul>
-                        <li>Для ребят, которые генерируют и хотят представить свои идеи</li>
-                        <li>Для ребят, которым нужно находится в сильном окружении</li>
-                        <li>Для ребят, которые хотят прокачать навыки предпринимательства</li>
-                        <li>Для ребят, которые творчески и креативны</li>
-                    </ul>
-                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                        <div class="wh-item">
+                            <div class="icon">
+                                <object data="assets/images/svg/time.svg" type=""></object>
+                            </div>
+                            <p>Организация каникул <b>с 2020 года</b></p>
+                        </div>
+                    </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                        <div class="wh-item">
+                            <div class="icon">
+                                <object data="assets/images/svg/qty.svg" type=""></object>
+                            </div>
+                            <p><b>Более 1000</b> отдохнувших детей</p>
+                        </div>
+                    </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                        <div class="wh-item">
+                            <div class="icon">
+                                <object data="assets/images/svg/win.svg" type=""></object>
+                            </div>
+                            <p>Ваш ребенок <b>стремится к новым победам</b> по системе мотивации и роста граждан</p>
+                        </div>
+                    </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                        <div class="wh-item">
+                            <div class="icon">
+                                <object data="assets/images/svg/repeat.svg" type=""></object>
+                            </div>
+                            <p>Грядку посещает <b>7 из 10 детей повторно</b>, потому что всегда новая программа</p> 
+                        </div>
+                    </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                        <div class="wh-item">
+                            <div class="icon">
+                                <object data="assets/images/svg/cash.svg" type=""></object>
+                            </div>
+                            <p>Дети любят <b>зарабатывать и тратить</b> валюту города</p>
+                        </div>
+                    </div>
             </div>
         </div>
     </section>
