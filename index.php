@@ -1,4 +1,7 @@
-<?php include 'data.php';?>
+<?php 
+include 'data.php';
+$ver='1.0';
+?>
 <!DOCTYPE html>
 <html lang="RU-ru">
     <head>
@@ -10,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="keywords" content="">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/style.css?ver=<?=$ver?>">
     </head>
     <body>
     
@@ -117,7 +120,9 @@
                 </div>
             </div>
             <div class="row">
-                some contasd
+                <div class="col-12">
+                    <h2>prof section</h2>
+                </div>
             </div>
         </div>
     </section>
@@ -148,15 +153,21 @@
                 <div class="col-12 col-md-4 col-lg-4">
                     <div class="price-container">
                         <div class="header">
-                            <h3>10 дней каникул</h3>
+                            <div class="price-badge">12.000 руб</div>
+                            <h3>5 дней каникул</h3>
                         </div>
                         <div class="content">
                             <ul>
-                                <li>Пребывание на площадке с 9:00 до 17:00 10 дней</li>
-                                <li>Трехразовое питание + перекус</li>
-                                <li>Каждый день мастер-класс или выезд: кино, лабиринт, МК по пицце</li>
-                                <li>Каждый день - интелектуальное, спортивное или развлекательное мероприятие</li>
-                                <li>Прогулки на свежем воздухе</li>
+                                <li>дети зарабатывают деньги и тратят</li>
+                                <li>обучаются разным профессиям</li>
+                                <li>
+                                    <p class="m-0">Открываем двери в 8:00 
+                                        <span class="text-muted d-block" style="font-size:10px">программа начинается в 9:00 до 17:00</span>
+                                    </p>
+                                </li>
+                                <li>Дети заказывают еду себе сами из предложенного меню</li>
+                                <li>Выездные мероприятия, кино, игровые лабиринты и выезд на производство в пиццерию.</li>
+                                <li>Прогулки с интенсивными играми</li>
                             </ul>
                         </div>
                         <div class="footer">
@@ -166,16 +177,22 @@
                 </div>
                 <div class="col-12 col-md-4 col-lg-4">
                     <div class="price-container">
-                    <div class="header">
-                            <h3>5 дней каникул</h3>
+                        <div class="header">
+                            <div class="price-badge">22.000 руб</div>
+                            <h3>10 дней каникул</h3>
                         </div>
                         <div class="content">
                             <ul>
-                                <li>Пребывание на площадке с 9:00 до 17:00 10 дней</li>
-                                <li>Трехразовое питание + перекус</li>
-                                <li>Каждый день мастер-класс или выезд: кино, лабиринт, МК по пицце</li>
-                                <li>Каждый день - интелектуальное, спортивное или развлекательное мероприятие</li>
-                                <li>Прогулки на свежем воздухе</li>
+                                <li>дети зарабатывают деньги и тратят</li>
+                                <li>обучаются разным профессиям</li>
+                                <li>
+                                    <p class="m-0">Открываем двери в 8:00 
+                                        <span class="text-muted d-block" style="font-size:10px">программа начинается в 9:00 до 17:00</span>
+                                    </p>
+                                </li>
+                                <li>Дети заказывают еду себе сами из предложенного меню</li>
+                                <li>Выездные мероприятия, кино, игровые лабиринты и выезд на производство в пиццерию.</li>
+                                <li>Прогулки с интенсивными играми</li>
                             </ul>
                         </div>
                         <div class="footer">
@@ -256,6 +273,6 @@
     <!-- scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.js?ver=<?=$ver?>"></script>
     </body>
 </html>
