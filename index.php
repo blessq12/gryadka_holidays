@@ -1,6 +1,6 @@
 <?php 
 include 'data.php';
-$ver='1.2';
+$ver='1.3';
 ?>
 <!DOCTYPE html>
 <html lang="RU-ru">
@@ -202,13 +202,6 @@ $ver='1.2';
                     <div class="title-section">
                         <h2>Стоимость</h2>
                         <hr>
-                    </div>
-                </div>
-            </div>
-            <div class="row d-block d-md-none d-lg-none">
-                <div class="col-12 d-flex justify-content-center">
-                    <div class="touch">
-                        <object data="assets/images/svg/touch.svg" type=""></object>
                     </div>
                 </div>
             </div>

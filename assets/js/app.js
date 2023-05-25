@@ -3,7 +3,29 @@ document.addEventListener('DOMContentLoaded',function(){
     let header = document.getElementsByTagName('header')[0]
     window.addEventListener('scroll',function(){
         let scroll = this.scrollY
-        console.log(scroll)
+    })
+
+    function onVisible(element, callback) {
+        new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if(entry.intersectionRatio > 0) {
+              callback(element);
+              observer.disconnect();
+            }
+          });
+        }).observe(element);
+    }
+
+    onVisible(document.querySelector('.price-container'),function(){
+        let row = document.querySelector('.price-row')
+        row.scroll({left:150,behavior:'smooth'})
+        setTimeout(function(){
+            row.scroll({
+                left: 0,
+                behavior: 'smooth'
+            })
+        },3000)
+        
     })
 
     // ticker 
