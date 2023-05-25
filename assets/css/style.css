@@ -291,8 +291,8 @@ section{
 }
 .photo-gallery .gallery .gallery-item .image{
     margin-bottom: 5px;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     background-position: center center;
     background-repeat: no-repeat!important;
     background-size: cover!important;

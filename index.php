@@ -41,7 +41,7 @@ $ver='1.4';
                         <div class="item">Август</div>
                     </div>
                     <div class="d-flex justify-content-center align-items-center text-center py-4">
-                        <a href="" class="cta-btn">Записаться</a>
+                        <a href="javascript:void(0)" class="cta-btn" data-target='modal'>Записаться</a>
                         <a href="javascript:void(0)" class="cta-btn secondary" onclick="scrollContact()">Контакты</a>
                     </div>
                     <div class="scroll-down">
@@ -120,7 +120,7 @@ $ver='1.4';
                     </div>
                     <div class="col-12 col-md-4 col-lg-4">
                     <div class="d-flex justify-content-center align-items-center text-center py-4">
-                        <a href="" class="cta-btn">Записаться</a>
+                        <a href="javascript:void(0)" class="cta-btn" data-target="modal">Записаться</a>
                     </div>
                     </div>
             </div>
@@ -132,7 +132,7 @@ $ver='1.4';
             <div class="row">
                 <div class="col-12">
                     <div class="title-section">
-                        <h2>Лето 2023 в грядка сити</h2>
+                        <h2>Лето 2023 в <br>грядка сити</h2>
                         <hr>
                     </div>
                 </div>
@@ -142,14 +142,14 @@ $ver='1.4';
                     <div class="cta-section">
                         <h2>Этим летом мы подготовили новые профессии для школьников и дошкольников</h2>
                         <p>
-                            Ваш ребенок прокачает навыки soft skills(жизненные навыки): коммуникации, лидерство, публичное выступление, работа в команте, креативное и творческое мышление, решение конфликтных ситуаций, управление своими эмоциями и желание учиться на протяжении всей жизни
+                            Ваш ребенок прокачает навыки soft skills(жизненные навыки): коммуникации, лидерство, публичное выступление, работа в команде, креативное и творческое мышление, решение конфликтных ситуаций, управление своими эмоциями и желание учиться на протяжении всей жизни.
                         </p>
                         <h4>
                             Для ребят от 8 лет каждую неделю проходят курсы по социальному проектированию "От идеи к делу"
                         </h4>
                     </div>
                     <div class="d-flex justify-content-start align-items-center text-center py-4">
-                        <a href="" class="cta-btn">Записаться</a>
+                        <a href="javascript:void(0)" class="cta-btn" data-target="modal">Записаться</a>
                         <a href="javascript:void(0)" class="cta-btn secondary" onclick="scrollContact()">Контакты</a>
                     </div>
                 </div>
@@ -352,5 +352,22 @@ $ver='1.4';
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.js"></script>
     <script src="assets/js/app.js?ver=<?=$ver?>"></script>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(93715799, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/93715799" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
     </body>
 </html>

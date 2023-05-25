@@ -53,4 +53,12 @@ document.addEventListener('DOMContentLoaded',function(){
             block: 'start'
         })
     }
+
+    // modal section
+    let targetBtns = document.querySelectorAll('[data-target]')
+    for (btn of targetBtns){
+        btn.addEventListener('click',function(){
+            alert('modal target')
+        })
+    }
 })
