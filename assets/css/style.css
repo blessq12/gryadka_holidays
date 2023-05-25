@@ -11,6 +11,11 @@
         transform: translateX(-100%);
     }
 }
+@keyframes invertScroll {
+    100% {
+        transform: translateX(0);
+    }
+}
 @keyframes arrowDownMove{
     0% {
         top: 0;
@@ -22,6 +27,17 @@
         top: 0;
     }
 }
+@keyframes horscroll {
+    0% {
+        right: 0;
+        opacity: 1;
+    }
+    100%{
+        right: 100%;
+        opacity: 0;
+    }
+    
+}
 :root{
     /* colors */
     --main-color: #1c8ed8;
@@ -29,6 +45,12 @@
     /* fonts */
     --heading: 'Gagalin';
     --radius: 25px;
+    --mobile-radius: 15px;
+    --shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    --vk-color: #4c75a3;
+    --wa-color: #128C7E;
+    --tg-color: #0088cc;
+    --inst-color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
 a{
     color: var(--main-color);
@@ -114,6 +136,7 @@ section{
     border: 2px solid var(--secondary-color);
     margin-bottom: 25px;
     border-radius: var(--radius);
+    background: #fff;
 }
 .wh-item .icon {
     position: absolute;
@@ -127,6 +150,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: var(--shadow);
 }
 .wh-item .icon object{height: 40px;width: 40px;}
 .wh-item p{
@@ -135,10 +159,21 @@ section{
     font-weight: 300;
     font-size: 22px;
 }
+.school-bag {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    opacity: 0.7;
+}
+.school-bag img{
+    width: 100%;
+}
 /* title section styles */
 .title-section{
     padding: 30px 0;
     text-align: center;
+    margin-bottom: 30px;
 }
 .title-section h2{
     font-family: var(--heading);
@@ -173,7 +208,142 @@ section{
     white-space: nowrap;
     text-transform: uppercase;
     opacity: 0.1;
+    color: var(--secondary-color);
 }
+.ticker--wrap{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.ticker--item{
+    transform: translateX(-100%);
+    animation: invertScroll 90s infinite linear;
+}
+.ticker--item p{
+    font-size: 98px;
+    font-weight: 800;
+    opacity: 0.1;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-right: 15px;
+    color: var(--secondary-color);
+}
+/* price section */
+.price-row{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 15px 0;
+    overflow-x: scroll;
+}
+.price-container{
+    overflow: hidden;
+    position: relative;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+.price-container .header{
+    background: var(--secondary-color);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    font-family: var(--heading);
+}
+.price-container .content {
+    min-height: 250px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+.price-container .content ul{
+    list-style: none;
+}
+.price-container .content ul li{
+    padding: 10px 0;
+}
+.price-container .footer {
+    min-height: 70px;
+    background: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.price-container .footer a.price-cta {
+    color: #fff;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.contact-list{
+    list-style: none;
+    padding: 0;
+}
+.contact-list li{
+    padding: 10px 0;
+    font-size: 32px;
+    font-weight: 500;
+}
+.contact-list li span{
+    font-family: var(--heading);
+    color: var(--secondary-color);
+    margin-right: 10px;
+}
+.contact-list .social-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-top: 15px;
+}
+.contact-list .social-list li{
+    position: relative;
+    overflow: hidden;
+    width: 100px;
+    height: 55px;
+    margin-right: 10px;
+    background: var(--secondary-color);
+    padding: 10px 15px;
+    border-radius: var(--radius);
+}
+.contact-list .social-list li span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+}
+.glitter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    transform: rotate(180deg);
+    opacity: 0.3;
+}
+.contact-list .social-list li.vk{background: var(--vk-color);}
+.contact-list .social-list li.wa{background: var(--wa-color);}
+.contact-list .social-list li.tg{background: var(--tg-color);}
+.contact-list .social-list li object{height: 100%;width: 100%;}
+.map-wrapper{
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+.building img{width: 100%;}
+.building {
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    z-index: 0;
+    width: 310px;
+    transform: rotate(24deg);
+}
+/* end price section */
 /* footer section styles */
 footer{
     background: var(--secondary-color);
@@ -183,6 +353,52 @@ footer{
 /* end footer section styles */
 
 @media (max-width:768px) {
+    .contact-list li {
+        padding: 0px 0;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .contact-list .social-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        margin-top: 15px;
+        justify-content: center;
+    }
+    .contact-list .social-list li {
+        width: 70px;
+        height: 40px;
+        margin-right: 10px;
+        background: var(--secondary-color);
+        padding: 9px 0px;
+        border-radius: var(--radius);
+    }
+    .building{width: 170px;}
+    .touch{
+        position: relative;
+        height: 35px;
+        width: 100%
+    }
+    .touch object{
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        right: 0;
+        animation: horscroll 2s infinite;
+        z-index: 999;
+        transition: all 0.3s ease-in-out;
+    }
+    .price-row{
+        flex-wrap: nowrap;
+        justify-content: start;
+        padding: 25px 0;
+        /* hide scrollbar on mobile */
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .price-row::-webkit-scrollbar{
+        display: none;
+    }
     .hero-wrapper h1{
         font-size: 52px;
     }
@@ -225,15 +441,22 @@ footer{
     }
     .wh-item .icon {
         position: absolute;
-        width: 90px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
         background: var(--secondary-color);
         top: -25px;
         left: -10px;
-        border-radius: var(--radius);
+        border-radius: var(--mobile-radius);
         padding: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .school-bag {
+        position: absolute;
+        bottom: -50px;
+        right: 0;
+        width: 240px;
+        opacity: 0.7;
     }
 }

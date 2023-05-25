@@ -1,3 +1,4 @@
+<?php include 'data.php';?>
 <!DOCTYPE html>
 <html lang="RU-ru">
     <head>
@@ -36,6 +37,9 @@
     </div>
     <!-- for whom section -->
     <section>
+        <div class="school-bag">
+            <img src="assets/images/school_bag.png" alt="">
+        </div>
         <div class="ticker-wrap">
                 <ul class="ticker">
                     <li>Сильное окружение</li>
@@ -44,6 +48,7 @@
                     <li>Творчество</li>
                     <li>Креативность</li>
                     <li>Своё мышление</li>
+                </ul>
                 </div>
             </div>
         </div>
@@ -100,53 +105,29 @@
             </div>
         </div>
     </section>
-    <!-- how it be -->
+    <!-- professions -->
     <section>
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="title-section">
-                        <h2>Как будет проходить</h2>
+                        <h2>Лето 2023</h2>
                         <hr>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
-                    <ul>
-                        <li>Группа edutaiment проходит отдельно от игровой программы МК, тренинги и задания наставника</li>
-                        <li>На 5 день дети будут знакомиться с направлениями в котором могут создать проект: помощь животным, людям, планете или соц. бизнес</li>
-                        <li>Каждый ребенок определит, хочет он в команде с кем-то делать проект или самостоятельно</li>
-                        <li>Наставник будет поддерживать связь с ребятами, чтобы подготовить проект</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- what it gave -->
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="title-section">
-                        <h2>Что получит ребенок</h2>
-                        <hr>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <ul>
-                        <li>Каждый ребенок получит набор навыков: креативное мышление, критическое мышление, работа в команде, публичные выступления</li>
-                        <li>Готовый проект для выступления на конференции Грядка Сити в августе</li>
-                        <li>На конференции каждый ребенок получит призы, а также будут определены победиттели по направлениям</li>
-                    </ul>
-                </div>
+                some contasd
             </div>
         </div>
     </section>
     <!-- price section -->
     <section>
+        <div class="ticker--wrap">
+            <div class="ticker--item">
+                <p>Выбирай лучшее для себя и своих близких по лучшим предложеням от Грядка сити</p>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -156,32 +137,63 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-6">
-                    <h3>10 дней каникул</h3>
-                    <ul>
-                        <li>Пребывание на площадке с 9:00 до 17:00 10 дней</li>
-                        <li>Трехразовое питание + перекус</li>
-                        <li>Каждый день мастер-класс или выезд: кино, лабиринт, МК по пицце</li>
-                        <li>Каждый день - интелектуальное, спортивное или развлекательное мероприятие</li>
-                        <li>Прогулки на свежем воздухе</li>
-                    </ul>  
+            <div class="row d-block d-md-none d-lg-none">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="touch">
+                        <object data="assets/images/svg/touch.svg" type=""></object>
+                    </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-6">
-                    <h3>5 дней каникул</h3>
-                    <ul>
-                        <li>Пребывание на площадке с 9:00 до 17:00 5 дней</li>
-                        <li>Трехразовое питание + перекус</li>
-                        <li>Каждый день мастер-класс или выезд: кино, лабиринт, МК по пицце</li>
-                        <li>Каждый день - интелектуальное, спортивное или развлекательное мероприятие</li>
-                        <li>Прогулки на свежем воздухе</li>
-                    </ul>  
+            </div>
+            <div class="row price-row">
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="price-container">
+                        <div class="header">
+                            <h3>10 дней каникул</h3>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li>Пребывание на площадке с 9:00 до 17:00 10 дней</li>
+                                <li>Трехразовое питание + перекус</li>
+                                <li>Каждый день мастер-класс или выезд: кино, лабиринт, МК по пицце</li>
+                                <li>Каждый день - интелектуальное, спортивное или развлекательное мероприятие</li>
+                                <li>Прогулки на свежем воздухе</li>
+                            </ul>
+                        </div>
+                        <div class="footer">
+                            <a href="" class="price-cta">Записать ребенка</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="price-container">
+                    <div class="header">
+                            <h3>5 дней каникул</h3>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li>Пребывание на площадке с 9:00 до 17:00 10 дней</li>
+                                <li>Трехразовое питание + перекус</li>
+                                <li>Каждый день мастер-класс или выезд: кино, лабиринт, МК по пицце</li>
+                                <li>Каждый день - интелектуальное, спортивное или развлекательное мероприятие</li>
+                                <li>Прогулки на свежем воздухе</li>
+                            </ul>
+                        </div>
+                        <div class="footer">
+                            <a href="" class="price-cta">Записать ребенка</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- contact section -->
     <section>
+        <div class="glitter">
+            <img src="assets/images/glitter.png" width="100%" alt="">
+        </div>
+        <div class="building">
+            <img src="assets/images/magazine_620x480.png" alt="">
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -193,16 +205,36 @@
             </div>
             <div class="row d-flex align-items-center">
                 <div class="col-12 col-md-6 col-lg-6">
-                    <h3>Контакты</h3>
-                    <ul>
-                        <li>Адрес: Б. Подгорная 87</li>
-                        <li>Телефон: +7(999)999-99-99</li>
-                        <li>Мессенждеры: TG/WA/VK/INST</li>
+                    <ul class="contact-list">
+                        <li><span>Адрес:</span>г. Томск. ул. Б. Подгорная 87</li>
+                        <li><span>Телефон:</span> <a href="tel:+7(3822)97-99-25">+7(3822)97-99-25</a></li>
+                        <li><span>Мессенджеры:</span>
+                            <ul class="social-list">
+                                <a href="<?=$vkLink?>" target="_blank" rel="nofollow">
+                                    <li class="vk">
+                                        <span></span>
+                                        <object data="assets/images/svg/vk.svg" type=""></object>
+                                    </li>
+                                </a>
+                                <a href="<?=$waLink?>" target="_blank" rel="nofollow">
+                                    <li class="wa">
+                                        <span></span>
+                                        <object data="assets/images/svg/wa.svg" type=""></object>
+                                    </li>
+                                </a>
+                                <a href="" target="_blank" rel="nofollow">
+                                    <li class="tg">
+                                        <span></span>
+                                        <object data="assets/images/svg/telegram.svg" type=""></object>
+                                    </li>
+                                </a>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-6 col-lg-6">
                     <div class="map-wrapper">
-                        <img src="http://via.placeholder.com/1024x512" width="100%" alt="">
+                        <img src="assets/images/gryadka-map.jpg" width="100%" alt="">
                     </div>
                 </div>
             </div>
