@@ -54,6 +54,7 @@
     --tg-color: #0088cc;
     --inst-color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
+
 a{
     color: var(--main-color);
     text-decoration: none;
@@ -232,6 +233,52 @@ section{
     margin-right: 15px;
     color: var(--secondary-color);
 }
+/* cta section */
+
+.cta-section{
+    display: block;
+}
+.cta-section h2{
+    font-family: var(--heading);
+}
+
+/* end cta section */
+/* gallery section */
+.photo-gallery {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.overlay-gallery{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(28,142,216,0) 55%);
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+.photo-gallery .gallery{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    animation: scrollHorizontal 25s infinite linear;
+}
+.photo-gallery .gallery .gallery-item{
+    display: block;
+    margin-right: 5px; 
+}
+.photo-gallery .gallery .gallery-item .image{
+    margin-bottom: 5px;
+    width: 150px;
+    height: 150px;
+    background-position: center center;
+    background-repeat: no-repeat!important;
+    background-size: cover!important;
+}
+/* end gallery section */
 /* price section */
 .price-row{
     justify-content: center;
@@ -398,6 +445,12 @@ footer{
 /* end footer section styles */
 
 @media (max-width:768px) {
+    .photo-gallery .gallery{
+        animation: scrollHorizontal 30s infinite linear;
+    }
+    .overlay-gallery{
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(184,184,184,0) 15%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 85%, rgba(255,255,255,1) 100%);
+    }
     .contact-list li {
         padding: 0px 0;
         font-size: 20px;

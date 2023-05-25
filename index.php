@@ -1,6 +1,6 @@
 <?php 
 include 'data.php';
-$ver='1.0';
+$ver='1.1';
 ?>
 <!DOCTYPE html>
 <html lang="RU-ru">
@@ -114,14 +114,77 @@ $ver='1.0';
             <div class="row">
                 <div class="col-12">
                     <div class="title-section">
-                        <h2>Лето 2023</h2>
+                        <h2>Лето 2023 в грядка сити</h2>
                         <hr>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <h2>prof section</h2>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="cta-section">
+                        <h2>Этим летом мы подготовили новые профессии для граждан от 4 лет</h2>
+                        <p>
+                            Для ребят от 8 лет каждую неделю проходят курсы по социальному проектированию "От идеи к делу"
+                        </p>
+                        <p>
+                            Ваш ребенок прокачает навыки soft skills(жизненные навыки): коммуникации, лидерство, публичное выступление, работа в команте, креативное и творческое мышление, решение конфликтных ситуаций, управление своими эмоциями и желание учиться на протяжении всей жизни
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="photo-gallery">
+                        <div class="overlay-gallery"></div>
+                        <div class="gallery">
+                            <div class="gallery-item">
+                                <div class="image" style="background: url('assets/images/gallery/1.jpeg');"></div>
+                                <div class="image" style="background: url('assets/images/gallery/2.jpeg');"></div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="image" style="background: url('assets/images/gallery/3.jpeg');"></div>
+                                <div class="image" style="background: url('assets/images/gallery/4.jpeg');"></div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="image" style="background: url('assets/images/gallery/5.jpeg');"></div>
+                                <div class="image" style="background: url('assets/images/gallery/6.jpeg');"></div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="image" style="background: url('assets/images/gallery/7.jpeg');"></div>
+                                <div class="image" style="background: url('assets/images/gallery/8.jpeg');"></div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="image" style="background: url('assets/images/gallery/9.jpeg');"></div>
+                                <div class="image" style="background: url('assets/images/gallery/10.jpeg');"></div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="image" style="background: url('assets/images/gallery/11.jpeg');"></div>
+                                <div class="image" style="background: url('assets/images/gallery/12.jpeg');"></div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="image" style="background: url('assets/images/gallery/13.jpeg');"></div>
+                                <div class="image" style="background: url('assets/images/gallery/14.jpeg');"></div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="image" style="background: url('assets/images/gallery/15.jpeg');"></div>
+                                <div class="image" style="background: url('assets/images/gallery/16.jpeg');"></div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="image" style="background: url('assets/images/gallery/17.jpeg');"></div>
+                                <div class="image" style="background: url('assets/images/gallery/18.jpeg');"></div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="image" style="background: url('assets/images/gallery/19.jpeg');"></div>
+                                <div class="image" style="background: url('assets/images/gallery/20.jpeg');"></div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="image" style="background: url('assets/images/gallery/21.jpeg');"></div>
+                                <div class="image" style="background: url('assets/images/gallery/22.jpeg');"></div>
+                            </div>
+                            <div class="gallery-item">
+                                <div class="image" style="background: url('assets/images/gallery/23.jpeg');"></div>
+                                <div class="image" style="background: url('assets/images/gallery/24.jpeg');"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

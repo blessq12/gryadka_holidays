@@ -17,4 +17,10 @@ document.addEventListener('DOMContentLoaded',function(){
         priceTicker = document.querySelector('.ticker--item'),
         clone = priceTicker.cloneNode(true)
     container.append(clone)
+
+    //gallery carousel
+    let galleryContainer = document.querySelector('.photo-gallery'),
+        gallery = this.querySelector('.gallery'),
+        galleryClone = gallery.cloneNode(true)
+    galleryContainer.append(galleryClone)
 })
