@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded',function(){
                 behavior: 'smooth'
             })
         },3000)
-        
     })
 
     // ticker 
@@ -45,4 +44,13 @@ document.addEventListener('DOMContentLoaded',function(){
         gallery = this.querySelector('.gallery'),
         galleryClone = gallery.cloneNode(true)
     galleryContainer.append(galleryClone)
+
+    function scrollContact(){
+        let sections = document.getElementsByTagName('section')
+        let section = sections[sections.length-1]
+        section.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    }
 })

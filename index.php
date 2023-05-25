@@ -1,6 +1,6 @@
 <?php 
 include 'data.php';
-$ver='1.3';
+$ver='1.4';
 ?>
 <!DOCTYPE html>
 <html lang="RU-ru">
@@ -14,9 +14,18 @@ $ver='1.3';
         <meta name="keywords" content="">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/style.css?ver=<?=$ver?>">
+        <script>
+        function scrollContact(){
+            let sections = document.getElementsByTagName('section')
+            let section = sections[sections.length-1]
+            section.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+        })
+    }
+        </script>
     </head>
     <body>
-    
     <!-- hero banner section -->
     <div class="hero-wrapper">
         <div class="overlay"></div>
@@ -30,6 +39,10 @@ $ver='1.3';
                         <div class="item">Июнь</div>
                         <div class="item">Июль</div>
                         <div class="item">Август</div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center text-center py-4">
+                        <a href="" class="cta-btn">Записаться</a>
+                        <a href="javascript:void(0)" class="cta-btn secondary" onclick="scrollContact()">Контакты</a>
                     </div>
                     <div class="scroll-down">
                         <object data="assets/images/svg/arrow-down.svg" type=""></object>
@@ -105,6 +118,11 @@ $ver='1.3';
                             <p>Грядку посещает <b>7 из 10 детей повторно</b>, потому что всегда новая программа</p> 
                         </div>
                     </div>
+                    <div class="col-12 col-md-4 col-lg-4">
+                    <div class="d-flex justify-content-center align-items-center text-center py-4">
+                        <a href="" class="cta-btn">Записаться</a>
+                    </div>
+                    </div>
             </div>
         </div>
     </section>
@@ -122,13 +140,17 @@ $ver='1.3';
             <div class="row align-items-center">
                 <div class="col-12 col-md-6 col-lg-6">
                     <div class="cta-section">
-                        <h2>Этим летом мы подготовили новые профессии для граждан от 4 лет</h2>
+                        <h2>Этим летом мы подготовили новые профессии для школьников и дошкольников</h2>
                         <p>
                             Ваш ребенок прокачает навыки soft skills(жизненные навыки): коммуникации, лидерство, публичное выступление, работа в команте, креативное и творческое мышление, решение конфликтных ситуаций, управление своими эмоциями и желание учиться на протяжении всей жизни
                         </p>
-                        <p>
-                            <b>Для ребят от 8 лет</b> каждую неделю проходят курсы по социальному проектированию "От идеи к делу"
-                        </p>
+                        <h4>
+                            Для ребят от 8 лет каждую неделю проходят курсы по социальному проектированию "От идеи к делу"
+                        </h4>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-center text-center py-4">
+                        <a href="" class="cta-btn">Записаться</a>
+                        <a href="javascript:void(0)" class="cta-btn secondary" onclick="scrollContact()">Контакты</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-6">
@@ -214,8 +236,8 @@ $ver='1.3';
                         </div>
                         <div class="content">
                             <ul>
-                                <li>дети зарабатывают деньги и тратят</li>
-                                <li>обучаются разным профессиям</li>
+                                <li>Дети зарабатывают деньги и тратят</li>
+                                <li>Обучаются разным профессиям</li>
                                 <li>
                                     <p class="m-0">Открываем двери в 8:00 
                                         <span class="text-muted d-block" style="font-size:10px">программа начинается в 9:00 до 17:00</span>
@@ -239,8 +261,8 @@ $ver='1.3';
                         </div>
                         <div class="content">
                             <ul>
-                                <li>дети зарабатывают деньги и тратят</li>
-                                <li>обучаются разным профессиям</li>
+                                <li>Дети зарабатывают деньги и тратят</li>
+                                <li>Обучаются разным профессиям</li>
                                 <li>
                                     <p class="m-0">Открываем двери в 8:00 
                                         <span class="text-muted d-block" style="font-size:10px">программа начинается в 9:00 до 17:00</span>
