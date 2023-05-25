@@ -222,7 +222,7 @@
                                         <object data="assets/images/svg/wa.svg" type=""></object>
                                     </li>
                                 </a>
-                                <a href="" target="_blank" rel="nofollow">
+                                <a href="<?=$tgLink?>" target="_blank" rel="nofollow">
                                     <li class="tg">
                                         <span></span>
                                         <object data="assets/images/svg/telegram.svg" type=""></object>
