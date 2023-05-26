@@ -2,7 +2,6 @@
 // Telegram data
 $token = '1773023736:AAFXTsMDUH-2HdiWfe5qHUfUFeyEtfejPmM';
 $recipient = '1815974380';
-var_dump($_POST);
 
 if (!empty($_POST)){
     extract($_POST);
