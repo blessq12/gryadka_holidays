@@ -483,7 +483,78 @@ footer{
 }
 .cta-btn.secondary:hover{background: var(--secondary-color)!important;color: #fff!important;}
 /* end cta buttons */
+/* modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-body {
+    min-height: 350px;
+    overflow: hidden;
+}
+.modal-header{
+    min-height: 45px;
+    background: var(--secondary-color);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--heading);
+    border: none;
+}
+.modal-close{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.modal-content{
+    min-height: 200px;
+    border-radius: 0;
+    border: none;
+    padding: var(--bs-modal-header-padding);
+}
+.modal-footer{
+    min-height: 45px;
+    background: var(--secondary-color);
+    color: #fff;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-top: none!important;
+}
+.form-btn{
+    background: transparent!important;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.form-btn:hover{
+    background: #fff!important;
+    color: var(--secondary-color);
+    border: 1px solid #fff;
+}
+.tarif-check{
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--radius);
+    background: transparent;
+    padding: 5px 15px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+input[type=radio]:checked + label{
+    background: var(--secondary-color);
+    color: #fff;
+}
+/* end modal */
 @media (max-width:768px) {
+    .modal-header h4{
+        font-size: 18px;
+    }
     .cta-btn {
         padding: 5px 15px;
         border-radius: var(--radius);

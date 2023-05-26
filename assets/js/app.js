@@ -56,9 +56,13 @@ document.addEventListener('DOMContentLoaded',function(){
 
     // modal section
     let targetBtns = document.querySelectorAll('[data-target]')
+    let modal = document.querySelector('.modal')
+    document.querySelector('.modal-close').addEventListener('click',()=>{
+        modal.classList.toggle('d-none')
+    })
     for (btn of targetBtns){
         btn.addEventListener('click',function(){
-            alert('modal target')
+            modal.classList.toggle('d-none')
         })
     }
 })

@@ -348,6 +348,61 @@ $ver='1.4';
             </div>
         </div>
     </footer>
+    <!-- end footer section -->
+    <!-- modal -->
+    <div class="modal d-none">
+    <div class="modal-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-4">
+                    <div class="modal-body">
+                        <div class="modal-header">
+                            <h4 class="m-0">Записаться на каникулы</h4>
+                            <span class="modal-close">X</span>
+                        </div>
+                        <div class="modal-content">
+                            <form action="send.php" method="post">
+                                <div class="row">
+                                    <div class="col-12 mb-3">
+                                        <div class="form-group">
+                                            <label for="name">Введите имя:</label>
+                                            <input type="text" name="name" id="name" placeholder="Имя родителя" class="form-control" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <label for="phone">Введите номер телефона:</label>
+                                        <input type="text" name="phone" id="phone" placeholder="+7(XXX)XXX-XX-XX" class="form-control" required>
+                                    </div>
+                                    <p class="mb-2">Выберите тарифный план:</p>
+                                    <div class="col-12 d-flex justify-content-start align-items-center">
+                                        <div class="form-check p-0" style="padding-right:10px!important;">
+                                            <input class="form-check-input d-none" value="10 дней" type="radio" name="tarif" id="cash1" checked>
+                                            <label class="form-check-label tarif-check" for="cash1">
+                                                10 дней
+                                            </label>
+                                        </div>
+                                        <div class="form-check p-0" style="padding-right:10px!important;">
+                                            <input class="form-check-input d-none" value="5 дней" type="radio" name="tarif" id="cash2">
+                                            <label class="form-check-labe tarif-check" for="cash2">
+                                                5 дней
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary form-btn" type="submit">Отправить</button>
+                            <button class="btn btn-primary form-btn" type="reset">Очистить форму</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+       
+    </div>
+    <!-- end modal -->
     <!-- scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.js"></script>
