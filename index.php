@@ -1,6 +1,6 @@
 <?php 
 include 'data.php';
-$ver='1.4';
+$ver='1.5';
 ?>
 <!DOCTYPE html>
 <html lang="RU-ru">
