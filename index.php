@@ -249,7 +249,7 @@ $ver='1.5';
                             </ul>
                         </div>
                         <div class="footer">
-                            <a href="" class="price-cta">Записать ребенка</a>
+                            <a href="javascript:void(0)" aria-label="Modal window" data-target='modal' class="price-cta">Записать ребенка</a>
                         </div>
                     </div>
                 </div>
@@ -274,7 +274,7 @@ $ver='1.5';
                             </ul>
                         </div>
                         <div class="footer">
-                            <a href="" class="price-cta">Записать ребенка</a>
+                            <a href="javascript:void(0)" aria-label="Modal window" data-target='modal' class="price-cta">Записать ребенка</a>
                         </div>
                     </div>
                 </div>
